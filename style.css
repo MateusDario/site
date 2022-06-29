@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Inter&family=Macondo&family=Righteous&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    font-size: 100%;
+    background: #392257 /*url(backzin.jpg)*/;
+}
+
+.cabecalho{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 15px;
+    background-color: #393939;
+    width: 100%;
+    position: fixed;
+    top:0;
+    left: 0;
+    z-index: 99;
+}
+.cabecalho-imagem{
+    height:70px;
+    width: 70px;
+    border-radius: 100%;
+}
+.cabecalho-menu{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+.cabecalho-menu-item{
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+    
+}
+.conteudo{
+    border-top: none;
+    margin-bottom: 48px;
+    
+    }
+    .conteudo-principal{
+        display: flex;
+    
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 200px;
+    }
+    .conteudo-principal-escrito{
+        display: flex;
+        flex-direction: column;
+        gap: 90px;
+        
+    }
+    .conteudo-principal-escrito-empresa{
+        font-family: 'Fredoka One', cursive;
+        color: red;
+        word-spacing: 3px;
+        letter-spacing: 3px;
+        text-align: center;
+    }
+    .conteudo-principal-escrito-titulo{
+
+        font-family: 'Righteous', cursive;
+        font-weight: 272px;
+        font-size: 48px;
+        color:white;
+        height: 50px;
+        width: 350px;
+        word-spacing: 3px;
+        letter-spacing: 3px;
+    }
+    .conteudo-principal-escrito-subtitulo{
+        
+        font-family: 'Inter', sans-serif;
+        color: white;
+        font-weight: 110px;
+        font-size: 24px;
+        height: 50px;
+        width: 370px;
+    }
+.conteudo-principal-escrito-botao{
+    color: black;
+    width: 180px;
+    height: 60px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: 'Fredoka One', cursive;
+    margin-top: 60px;
+
+}
+.conteudo-principal-escrito-botao:hover{
+    background-color: aqua;
+}
+.conteudo-principal-imagem{
+    margin-top: 24px;
+    height: 414px;
+    size: 517px;
+    border-radius: 20px;
+}
+.conteudo-secundario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    margin-top: 200px;
+    gap: 40px;
+    padding: 90px;
+}
+.conteudo-secundario-titulo{
+    
+    font-family: 'Righteous', cursive;
+    margin-left: 30px;
+    padding-top: 48px;
+    font-weight: 300px;
+    font-size: 30px;
+    height: 60px;
+    width: 20%;
+    color: white;
+    word-spacing: 3px;
+        letter-spacing: 3px;
+}
+.conteudo-secundario-paragrafo{
+    font-family: 'Inter', sans-serif;
+    color: white;
+    font-weight: 300px;
+    font-size: 12px;
+    height: 30px;
+    width: 354px;
+}
+.conteudo-secundario-imagens{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 10px;
+    height: 314px;
+    width: 333px;
+    size: 517px;
+}
+.conteudo-secundario-imagem1{
+    display: block;
+    border-radius: 20px;
+    height: 290px;
+    width: 333px;
+    size: 517px;
+}
+
+.conteudo-secundario-imagem2{
+    border-radius: 20px;
+    height: 290px;
+    width: 333px;
+    size: 517px;
+}
+
+.conteudo-secundario-imagem3{
+    border-radius: 20px;
+    height: 290px;
+    width: 333px;
+    size: 517px;
+}
+.container {
+    margin-top: autos;
+    position: relative;
+    width: 50%;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: blue;
+    }
+  
+  .container:hover .overlay {
+    opacity: 1;
+    }
+  
+  .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    }
+
+.rodape {
+    padding: 40px;
+    
+    margin-top: 600px;
+    background-color: #333333;
+}
+.rodape-contato{
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: white;
+}
+.rodape-contato-titulo{
+    margin-bottom: 8px;
+}
+.rodape-contato-whats{
+    color: aliceblue;
+}
+.rodape-contato-insta{
+    color: white;
+}
+@media screen and (max-width: 600px) {
+    .cabecalho-menu{
+        display: flex;
+        width: 30%;
+        gap: 20px;
+        
+    }
+    .cabecalho{display: flex;
+    gap: 90px;
+    position: fixed;
+    top:0;
+    left: 0;
+    }
+    .conteudo-secundario{
+        margin-top: 40px;
+    }
+    .conteudo-principal{
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        gap: 100px;
+        width: 100%;
+        margin-left: 10%;
+        
+    }
+    .conteudo-principal-escrito{
+        width: 100%;
+    }
+    .conteudo-principal-escrito-empresa{
+        font-size: 10px;
+        width: 70%;
+    }
+    .conteudo-principal-escrito-titulo{
+        font-size: 35px;
+        width: 50%;
+    }
+    .conteudo-principal-escrito-subtitulo{
+        width: 100%;
+    }
+    .conteudo{ display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 1px;
+    }
+    .conteudo-principal-escrito-botao{
+        margin-top: 150px;
+    }
+    .conteudo-secundario{
+        display: flex;
+        gap: 1px;
+    }
+    .conteudo-secundario-titulo{
+        width: auto;
+    }
+    .conteudo-secundario-imagens{
+        display: flex;
+        gap: 30px;
+    }
+    .rodape{
+        width:100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .conteudo-principal{
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        gap: 100px;
+        width: 65%;
+        
+    }
+    .conteudo-principal-imagem{
+        width: 63%;
+    }
+    .conteudo-secundario{
+        margin: none;
+    }
+}
